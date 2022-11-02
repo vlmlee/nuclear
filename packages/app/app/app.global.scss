@@ -79,6 +79,7 @@ table {
   color: $white;
   background: $background3;
   position: relative;
+  margin: 0;
 }
 
 .ui.inverted.segment {
@@ -95,7 +96,8 @@ table {
 }
 
 .ui.secondary.pointing.menu {
-  border-color: rgba($white, 0.15);
+  border-color: rgba($white, 0.1);
+  margin-bottom: 0;
 
   a.item {
     &:hover {
