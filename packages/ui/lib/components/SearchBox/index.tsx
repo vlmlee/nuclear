@@ -84,7 +84,7 @@ const SearchBox: React.FC<SearchBarProps> = ({
         )}
         ref={searchRef}
       >
-        <Icon name='search' disabled={disabled} />
+        <Icon name='search' disabled={disabled} className={input && styles.active} />
         <input
           data-testid='search-input'
           autoFocus
@@ -96,16 +96,16 @@ const SearchBox: React.FC<SearchBarProps> = ({
           onClick={() => handleFocus(true)}
           value={input}
         />
-        {
-          !loading && !isEmpty(input) && <Button 
-            className={styles.search_box_clear}
-            data-testid='search-box-clear'
-            borderless 
-            basic
-            icon='times'
-            onClick={onClear}
-          />
-        }
+        {/* {*/}
+        {/*  !loading && !isEmpty(input) && <Button*/}
+        {/*    className={styles.search_box_clear}*/}
+        {/*    data-testid='search-box-clear'*/}
+        {/*    borderless*/}
+        {/*    basic*/}
+        {/*    icon='times'*/}
+        {/*    onClick={onClear}*/}
+        {/*  />*/}
+        {/* }*/}
         {loading && <Loader type='small' className={styles.search_box_loader}/>}
         {
           !_.isNil(searchProviders) && !_.isEmpty(searchProviders) &&

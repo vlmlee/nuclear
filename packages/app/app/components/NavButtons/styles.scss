@@ -12,10 +12,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $blue;
     height: 30px;
     width: 30px;
     cursor: pointer;
+    border-radius: 5px;
 
     &.disable {
       opacity: 0.4;
