@@ -53,7 +53,7 @@ const SidebarMenuContainer: React.FC = () => {
     }
   >
     <SidebarMenu>
-      {!isCollapsed && <div className={styles.logo_container}><img src={logoIcon} /><span>Nuclear</span></div>}
+      {!isCollapsed && <div className={styles.logo_container}><img src={`${logoIcon}`}  alt={'logo'}/><span>Nuclear</span></div>}
 
       {
         categories.map(({ name, items }) => (
