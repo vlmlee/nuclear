@@ -30,7 +30,7 @@ const SidebarMenuContainer: React.FC = () => {
     width,
     onSetWidth
   } = useResizablePanel({
-    initialWidth: 195,
+    initialWidth: 200,
     collapsedWidth: 42,
     collapseThreshold: 200,
     onCollapse,
