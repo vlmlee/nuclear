@@ -115,11 +115,12 @@ table {
     border-color: $green;
     border-radius: 5px 5px 0 0;
 
-    background-color: #282a36;
+    background-color: $bgdark;
 
     &:hover {
       color: $white;
       border-color: $green;
+      background-color: $bgdark;
     }
   }
 }
