@@ -102,12 +102,18 @@ table {
       color: $white;
     }
 
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: $nuclear-font;
+    letter-spacing: 0.5px;
   }
 
   .active.item {
     color: $white;
     border-color: $green;
+    border-radius: 5px 5px 0 0;
+
+    background-color: #282a36;
 
     &:hover {
       color: $white;
