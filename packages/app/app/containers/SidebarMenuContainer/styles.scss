@@ -8,10 +8,11 @@
     flex-flow: column;
 
     background-color: $background;
-    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.18), 5px 0px 20px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 1px -1px 1px 0 rgba(255, 255, 255, 0.1);
 
     &.collapsed {
         width: 3rem;
+        transition: 0.15s width ease-in-out;
 
         .sidebar_brand {
             padding: 1rem 0;
@@ -20,7 +21,8 @@
         .sidebar_menu_item_container {
             display: flex;
             justify-content: center;
-            padding: 0.5rem 0.25rem;
+            padding: 1rem 0.25rem;
+            font-size: 16px;
 
             i {
                 margin: 0;
@@ -43,6 +45,7 @@
 }
 
 .active_nav_link {
-    color: $white !important;
-    border-left: 0.25rem solid $green;
+    .sidebar_menu_item_container {
+        background-color: #282a36;
+    }
 }

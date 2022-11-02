@@ -6,7 +6,6 @@ html {
   height: 100%;
   cursor: default;
   -webkit-user-select: none;
-  font-family: $nuclear-font;
 }
 
 @keyframes body-fade-in {
@@ -25,6 +24,7 @@ body {
   height: 100%;
   margin: 0;
   animation: body-fade-in $long-duration;
+  font-family: $nuclear-font;
 }
 
 body.dimmed {

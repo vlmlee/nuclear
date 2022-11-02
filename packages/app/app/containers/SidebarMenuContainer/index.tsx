@@ -29,7 +29,7 @@ const SidebarMenuContainer: React.FC = () => {
     width,
     onSetWidth
   } = useResizablePanel({
-    initialWidth: 300,
+    initialWidth: 195,
     collapsedWidth: 42,
     collapseThreshold: 200,
     onCollapse,
@@ -68,7 +68,7 @@ const SidebarMenuContainer: React.FC = () => {
                     name={t(name)}
                     compact={settings.compactMenuBar}
                   >
-                    <Icon name={icon} />{!settings.compactMenuBar && t(name)}
+                    <Icon name={icon} />{!settings.compactMenuBar && (<span>{t(name)}</span>)}
                   </SidebarMenuItem>
                 </NavLink>
               ))}

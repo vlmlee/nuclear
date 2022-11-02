@@ -4,9 +4,12 @@ $bgdefault: #424557;
 $bglight: #555977;
 $bglighter: #6a6f95;
 
-$background: $bgdark;
-$background2: $bgdefault;
-$background3: $bgdarker;
+// New theme
+$bgColor-Dark: #212125;
+
+$background: $bgColor-Dark;
+$background2: $bgColor-Dark;
+$background3: $bgColor-Dark;
 $lightbg: $bglighter;
 
 $grey: #f8f8f2;
