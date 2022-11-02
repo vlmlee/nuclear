@@ -52,7 +52,7 @@
 
       h4 {
         @include ellipsis;
-        font-family: "SF Pro Retina", Arial, Helvetica, sans-serif;
+        font-family: $nuclear-font;
         font-weight: 500;
         font-size: 13px;
         line-height: 13px;
