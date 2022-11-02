@@ -14,6 +14,7 @@ import { setBooleanOption } from '../../actions/settings';
 import { useResizablePanel } from './hooks';
 import categories from './categories';
 import styles from './styles.scss';
+import logoIcon from '../../../resources/media/512x512.png';
 // import { UserPanelContainer } from '../UserPanelContainer';
 
 const SidebarMenuContainer: React.FC = () => {
@@ -52,15 +53,14 @@ const SidebarMenuContainer: React.FC = () => {
     }
   >
     <SidebarMenu>
+      {!isCollapsed && <div className={styles.logo_container}><img src={logoIcon} /><span>Nuclear</span></div>}
+
       {
         categories.map(({ name, items }) => (
-          <React.Fragment
+          <div
             key={name}
+            className={styles.category_section}
           >
-            <SidebarMenuCategoryHeader
-              compact={settings.compactMenuBar}
-              headerText={t(name)}
-            />
             {
               items.map(({ name, path, icon }) => (
                 <NavLink key={path} to={'/' + path} activeClassName={styles.active_nav_link}>
@@ -72,7 +72,7 @@ const SidebarMenuContainer: React.FC = () => {
                   </SidebarMenuItem>
                 </NavLink>
               ))}
-          </React.Fragment>
+          </div>
         ))}
     </SidebarMenu>
     {/* {

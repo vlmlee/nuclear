@@ -131,9 +131,6 @@ class App extends React.PureComponent {
         <div className={styles.app_container}>
           <MiniPlayerContainer />
           <Navbar>
-            <div className={styles.sidebar_brand}>
-              <img src={logoIcon} />
-            </div>
             <NavButtons />
             <SearchBoxContainer />
             <Spacer className={styles.navbar_spacer} />
