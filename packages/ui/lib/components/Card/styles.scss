@@ -38,7 +38,7 @@
     }
 
     .thumbnail {
-      @include roundCorners;
+      border-radius: 0.25em 0.25em 0 0;
       position: relative;
       height: 0;
       padding-top: 100%;
@@ -52,6 +52,12 @@
 
       h4 {
         @include ellipsis;
+        font-family: "SF Pro Retina", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 13px;
+        letter-spacing: 0.5px;
+        overflow: visible;
       }
 
       p {
