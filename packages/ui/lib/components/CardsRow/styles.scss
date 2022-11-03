@@ -72,6 +72,9 @@
     .scroll_buttons {
         display: flex;
         align-items: center;
+        position: relative;
+        top: 2px;
+
         .scroll_button {
             background: none !important;
 
@@ -116,7 +119,6 @@
 
 @keyframes grow-n-shrink {
     0% {
-        transform: scale(1);
     }
     50% {
         transform: scale(1.4);
