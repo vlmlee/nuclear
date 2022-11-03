@@ -78,6 +78,10 @@
             &:not(:last-child) {
                 margin-right: 1em;
             }
+
+            &:hover {
+                animation: 1s grow-n-shrink infinite;
+            }
         }
     }
 
@@ -107,5 +111,17 @@
         display: flex;
         align-items: center;
         flex-flow: column;
+    }
+}
+
+@keyframes grow-n-shrink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
     }
 }
