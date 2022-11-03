@@ -1,6 +1,7 @@
 import '../resources/Lato.scss';
 import '../resources/SF Pro.scss';
 import '../resources/SF Mono.scss';
+import '../resources/Spectral.scss';
 
 export { default as AlbumGrid } from './components/AlbumGrid';
 export { default as ArtistGrid } from './components/ArtistGrid';
