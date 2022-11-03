@@ -9,10 +9,14 @@
   }
   
   .lyrics_text{
+    position: relative;
+    top: 30px;
     white-space: pre-line;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-left: 1rem;
     cursor: text;
     user-select: text;
+    font-family: Spectral;
+    color: rgba(255, 255, 255, 0.9);
   }
 }

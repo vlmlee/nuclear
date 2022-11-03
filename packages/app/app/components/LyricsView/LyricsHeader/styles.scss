@@ -7,13 +7,15 @@
   user-select: text;
 
   .lyrics_header_name {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .lyrics_header_artist {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.2em;
+    line-height: 1.2em;
     color: rgba($white, 0.6);
   }
 }
