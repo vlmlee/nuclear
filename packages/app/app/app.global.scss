@@ -25,6 +25,7 @@ body {
   margin: 0;
   animation: body-fade-in $long-duration;
   font-family: $nuclear-font;
+  text-rendering: optimizeLegibility;
 }
 
 body.dimmed {
