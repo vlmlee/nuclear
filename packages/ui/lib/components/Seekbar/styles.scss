@@ -2,7 +2,7 @@
 
 .seekbar {
   position: relative;
-  height: 1.25em;
+  height: 0.5em;
   cursor: pointer;
   background-color: $background2;
   flex: 0 0 auto;
@@ -11,6 +11,8 @@
   .seekbar_progress {
     height: 100%;
     background-color: $pink;
+    box-shadow: inset 0 0 4px 5px #db2777, inset 4px 1px 5px 4px #9d174d;
+    border-radius: 0.5em;
   }
 
   .seekbar_segment {
@@ -18,7 +20,6 @@
     background-color: rgba($blue, 0.75);
     height: 100%;
   }
-
 }
 
 .seekbar_popup {
