@@ -19,17 +19,15 @@
       width: 2rem;
       height: 2rem;
       margin: 0;
+      position: relative;
+      top: -2px;
 
       &:first-child {
         margin-left: 0;
       }
 
       &:hover {
-        background: lighten($background2, 10%);
-      }
-
-      &:active {
-        background: lighten($background2, 20%);
+        animation: 1s grow-n-shrink infinite;
       }
 
       i {
