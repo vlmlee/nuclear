@@ -83,14 +83,11 @@ $input_height: 30px;
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.4px;
+      opacity: 0.9;
 
       .item,
       .text {
         color: $white !important;
-      }
-
-      &:hover {
-        opacity: 0.9;
       }
 
       &:active {
@@ -124,6 +121,12 @@ $input_height: 30px;
       &:focus,
       &:active {
         background: transparent !important;
+      }
+    }
+
+    .ui.dropdown .menu {
+      .text {
+        font-size: 12px;
       }
     }
   }
