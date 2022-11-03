@@ -57,6 +57,10 @@ $input_height: 30px;
 
       font-size: 13px;
 
+      &::placeholder {
+        color: rgba($white, 0.4);
+      }
+
       &::selection {
         background: rgba($lightbg, 0.85);
       }
@@ -66,7 +70,7 @@ $input_height: 30px;
       }
 
       &:focus {
-        box-shadow: 0 0 0 1px #ffffff30;
+        box-shadow: 0 0 0 1px #ffffff;
         border-radius: 3px;
       }
     }

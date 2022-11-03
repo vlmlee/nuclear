@@ -73,19 +73,11 @@ const CardsRow: React.FC<CardRowProps> = ({
             onChange={onFilterChange}
             placeholder={filterPlaceholder}
           />
-          <Button 
-            className={styles.filter_button}
-            onClick={onFilterClick}
-            borderless
-            color={'blue'}
-            icon='filter' 
-          />
         </div>
         <Button 
           className={styles.scroll_button}
           onClick={onScrollButtonClick(-1)}
           borderless
-          circular
           size='tiny'
           color='blue'
           icon='chevron left'
@@ -94,7 +86,6 @@ const CardsRow: React.FC<CardRowProps> = ({
           className={styles.scroll_button}
           onClick={onScrollButtonClick(1)}
           borderless
-          circular
           size='tiny'
           color='blue'
           icon='chevron right'

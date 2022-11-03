@@ -14,6 +14,7 @@
         justify-content: space-between;
         padding: 0.5em 1em;
         width: 100%;
+        overflow: visible;
 
         h2 {
             margin: 0;
@@ -25,38 +26,46 @@
     .filter_container {
         display: inline-flex;
         margin-right: 1em;
+        height: 30px;
 
         .icon {
             color: $white;
         }
 
         .cards_filter input {
-            background: rgba($bglighter, 0.25);
-            color: $white;
+            background: $bgdark;
+            color: #f8f8f2;
             border: 1px solid transparent;
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-
-            &::placeholder {
-                color: rgba($white, 0.5);
-            }
+            font-family: $nuclear-font;
+            font-size: 13px;
+            padding: .8em 1em;
 
             &::selection {
                 background-color: $blue;
                 color: $white;
             }
 
+            &::placeholder {
+                color: rgba($white, 0.4);
+            }
+
             &:active,
             &:focus {
+                box-shadow: 0 0 0 1px inset #ffffff;
+
                 &::placeholder {
-                    color: rgba($white, 0.2);
+                    color: rgba($white, 0.4);
                 }
             }
         }
 
         .filter_button {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
+
+            i.icon {
+                position: relative;
+                top: -1px;
+                font-size: 12px;
+            }
         }
     }
 
@@ -64,6 +73,8 @@
         display: flex;
         align-items: center;
         .scroll_button {
+            background: none !important;
+
             &:not(:last-child) {
                 margin-right: 1em;
             }
