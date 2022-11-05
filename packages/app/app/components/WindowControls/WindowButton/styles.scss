@@ -1,18 +1,16 @@
 .window_button_container {
   display: flex;
-
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-
+  width: 18px;
+  height: 18px;
   cursor: pointer;
-
   color: #f8f8f2;
-
-  font-size: 16px;
-
   flex: 0 0 auto;
-  align-items: center;
+  position: relative;
+  right: 10px;
+
+  i.icon {
+    font-size: 14px;
+  }
 }
 
 
