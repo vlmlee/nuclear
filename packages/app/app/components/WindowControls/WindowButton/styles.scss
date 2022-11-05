@@ -10,6 +10,9 @@
 
   i.icon {
     font-size: 14px;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
