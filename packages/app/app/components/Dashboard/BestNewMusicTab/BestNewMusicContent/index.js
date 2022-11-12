@@ -44,15 +44,18 @@ const BestNewMusicContent = ({
           </div>
         }
       </div>
-      {
-        item.review.split('\n').map((paragraph, i) => {
-          return (
-            <p key={'item-' + i} className={styles.paragraph}>
-              {paragraph}
-            </p>
-          );
-        })
-      }
+      <div className={styles.description}>
+        <p>Description</p>
+        {
+          item.review.split('\n').map((paragraph, i) => {
+            return (
+              <p key={'item-' + i} className={styles.paragraph}>
+                {paragraph}
+              </p>
+            );
+          })
+        }
+      </div>
     </div>
   );
 };

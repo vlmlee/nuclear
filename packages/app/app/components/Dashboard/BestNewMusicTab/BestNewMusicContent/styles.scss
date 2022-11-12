@@ -68,11 +68,13 @@
     color: $white;
   }
 
-  .paragraph {
-    max-width: 720px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    color: rgba($white, 0.85);
+  .description {
+      i.paragraph {
+        max-width: 720px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: rgba($white, 0.85);
+      }
   }
 }
